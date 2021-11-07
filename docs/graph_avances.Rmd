@@ -1,0 +1,89 @@
+---
+title: "Exercices pratiques sur le module 4 : graphiques avancés"
+author: "..."
+date: "..."
+output: html_document
+---
+
+```{r setup}
+SciViews::R
+```
+
+<!--- RC : Exécutez les lignes de code suivantes pour importer le jeu de données depuis le fichier `ckd.rds` qui se trouve dans le dossier `data` et l'assigner à `ckd`. Les patients pour lesquels des données manquantes étaient présentes dans les variables facteurs ont été supprimées. --->
+
+```{r importation}
+ckd <- read("../data/ckd.rds")
+names(ckd)
+```
+
+<!--- Consignes
+Réalisez un dénombrement par classe de patient (`class`) des patients présentant ou non une Maladie de l'artère coronaire (`cad`) en utilisant de la couleur. Décrivez votre graphique en maximum 5 phrases. 
+--->
+
+```{r bar1}
+
+```
+
+<!--- Consignes
+Réalisez un dénombrement par classe de patient (`class`) des patients présentant ou non des amas de cellules de pus (`pcc`) en utilisant de la couleur. Utilisez l'argument `position = "dodge"` Décrivez votre graphique en maximum 5 phrases. 
+--->
+
+```{r bar2}
+
+```
+
+<!--- Consignes
+Réalisez deux graphiques du dénombrement des hypertentions (`htn`) en distinguant par la couleur les patients présentants un diabète sucré (`dm`). Utilisez le facette pour réaliser ces graphiques par classe de patients (`class`). Pour le premier, utiliser l'argument position = "stack" (option par defaut). Pour le second, utiliser l'argument position = "fill".
+Décrivez vos graphiques en maximum 5 phrases. Que constatez-vous au niveau de l'axe des ordonnées ?   
+--->
+
+```{r bar3}
+
+```
+
+<!--- Consignes
+Réalisez un graphique en barres de la moyenne de la concentration en urée sanguine (`bu`) en fonction de la classe (`class`). Décrivez votre graphique en maximum 5 phrases. 
+--->
+
+```{r bar4}
+
+```
+
+<!--- Consignes
+Réalisez des boites de dispersion de la glycémie (`bgr`) en fonction de la classe (`class`). Décrivez le en maximum 5 phrases.
+--->
+
+```{r boxplot1}
+
+```
+
+<!--- Consignes
+Réalisez des boites de dispersion de la concentration en sodium (`sod`) en fonction de la classe (`class`) et de l'hypertension (`htn`) en couleur. Indiquez le nombre d'observation sur votre graphiques. Décrivez le en maximum 5 phrases.  
+--->
+
+```{r boxplot2}
+give_n <- function(x)
+  c(y = max(x) * 1.1, label = length(x)) 
+
+```
+
+<!--- Consignes
+Réalisez deux boites de dispersion, l'une représentant le nombre de globule blanc (`wc`) et l'autre le nombre de globule rouge (`rc`) en fonction de la classe (`class`). Ajoutez de la couleur en fonction de la classe. Assemblez ces deux graphiques sur un seul et décrivez les en maximum 5 phrases.  
+--->
+
+```{r boxplot3}
+
+```
+
+<!--- Consinges
+C'est maintenant à vous de jouez. Réalisez et commentez deux nouveaux graphiques (un graphique en barre et une boite de dispersion) à partir du jeu de données `ckd`.
+--->
+
+```{r perso1}
+
+```
+
+```{r perso2}
+
+```
+
