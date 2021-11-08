@@ -20,4 +20,4 @@ L'objectif est de compléter votre apprentissage dans la visualisation des donn�
 
 ## Consignes 
 
-Au sein du fichier `graphes_avances.Rmd` qui se trouve dans le dossier `docs`, réalisez et décrivez les différents graphiques demandés. 
+Au sein du fichier `graphes_avances.Rmd` qui se trouve dans le dossier `docs`, réalisez et décrivez les différents graphiques demandés. Une fois le travail réalisé, **assurez-vous que le document compile en un rapport final HTRML sans erreurs via le bouton `Knit`**, sinon, corrigez les erreurs qui s'affichent.
