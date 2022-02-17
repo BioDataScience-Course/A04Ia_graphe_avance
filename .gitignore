@@ -46,6 +46,7 @@ README.html
 docs/*.html
 docs/*.pdf
 docs/*.nb.html
+docs/*_files/
 
 # OS-specific files
 .DS_Store
