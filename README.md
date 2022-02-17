@@ -18,7 +18,7 @@ Ce projet est un projet **individuel**, **court** et **cadré** qui doit être *
 - des boîtes de dispersion
 - des figures composées
 
-L'interprétation correcte et complète de manière synthétique des graphique est également un aspect important de ce travail. Attention : ne décrivez pas "techniquement" vos graphiques comme par exemple "graphique en barres verticales de Y sur X utilisant la couleur.". Ce genre de phrase est inutile. Le lecteur le voit bien et il est censé savoir de quel type de graphique il s'agit. Vous devez par contre expliciter les points importants qui ressortent de l'*analyse* du graphique. Par exemple "les patients atteints d'IRC présentent une valeur plus élemvée de Y, avec même trois valeurs extrêmes. La dispesion des données (espace interquartile) est également plus grande, et elle est par ailleurs asymétrique. Les patients sains par contre, ..."
+L'interprétation correcte et complète de manière synthétique des graphique est également un aspect important de ce travail. Attention : ne décrivez pas "techniquement" vos graphiques comme par exemple "graphique en barres verticales de Y sur X utilisant la couleur.". Ce genre de phrase est inutile. Le lecteur le voit bien et il est censé savoir de quel type de graphique il s'agit. Vous devez par contre expliciter les points importants qui ressortent de l'*analyse* du graphique. Par exemple "les patients atteints d'IRC présentent une valeur plus élevée de Y, avec même trois valeurs extrêmes. La dispersion des données (espace interquartile) est également plus grande, et elle est par ailleurs asymétrique. Les patients sains par contre, ..."
 
 ## Consignes 
 

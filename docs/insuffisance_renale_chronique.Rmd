@@ -18,7 +18,7 @@ irc <- read("../data/irc.rds")
 names(irc)
 ```
 
-<!--# La signification des variables et les unités sont expliquée ici: https://archive.ics.uci.edu/ml/datasets/Chronic_Kidney_Disease (le nom des variables est conservé, mais les niveaux, les labels et les unités sont françisés) -->
+<!--# La signification des variables et les unités sont expliquée ici: https://archive.ics.uci.edu/ml/datasets/Chronic_Kidney_Disease (le nom des variables est conservé, mais les niveaux, les labels et les unités sont francisés) -->
 
 <!--% Réalisez un dénombrement par classe (`class`) des patients présentant ou non une coronaropathie (`cad`) en utilisant des aplats (surfaces) colorés par défaut. Interprétez votre graphique en texte Markdown juste en dessous en maximum 5 phrases. -->
 
@@ -81,4 +81,4 @@ give_n <- function(x)
 
 ```
 
-<!--# Lorsque vous aurez terminé, assurez-vous que le document compile (bouton 'Knit') sans erreurs et que vous avez conservé la structure intiale du document, en particulier les labels des chunks. -->
+<!--# Lorsque vous aurez terminé, assurez-vous que le document compile (bouton 'Knit') sans erreurs et que vous avez conservé la structure initiale du document, en particulier les labels des chunks. -->
