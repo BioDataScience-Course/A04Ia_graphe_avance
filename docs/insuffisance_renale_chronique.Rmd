@@ -32,9 +32,10 @@ names(irc)
 
 ```
 
+```{=html}
 <!--% Réalisez deux graphiques du dénombrement de l’hypertension (`htn`) en distinguant par la couleur les patients présentant un diabète sucré (`dm`). Utilisez un graphique en facettes pour la classe de patients (`class`). Pour le premier graphique, utiliser l'argument `position = "stack"` (option par défaut). Pour le second graphique, utiliser l'argument `position = "fill"`.
 Interprétez votre premier graphique en texte Markdown juste en dessous de lui en maximum 5 phrases. En dessous du second graphique, et toujours sous forme de texte Markdown, comparez les deux graphiques au niveau de l'axe des ordonnées ? Dites lequel vous parait le plus adéquat ici et pourquoi. -->
-
+```
 ```{r bar3a}
 # Avec position = "stack"
 
@@ -82,3 +83,4 @@ give_n <- function(x)
 ```
 
 <!--# Lorsque vous aurez terminé, assurez-vous que le document compile (bouton 'Knit') sans erreurs et que vous avez conservé la structure initiale du document, en particulier les labels des chunks. -->
+
