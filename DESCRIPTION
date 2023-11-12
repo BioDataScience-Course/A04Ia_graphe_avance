@@ -1,7 +1,7 @@
 Package: A04Ia_graphe_avance
 Type: Package
 Version: 2.0.0
-Title: Graphiques avancées
+Title: Graphiques avancés
 Description: Projet individuel cadré du module 4 du cours SDD I à l'UMONS
 Authors@R: c(
   person("Guyliann", "Engels", role = "aut",

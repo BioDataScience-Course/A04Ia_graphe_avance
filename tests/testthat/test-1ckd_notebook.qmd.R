@@ -76,7 +76,7 @@ test_that("Chunk 'import' : importation des données", {
   expect_true(is_identical_to_ref("import", "names"))
   # Les colonnes dans le tableau `ckd` importé ne sont pas celles attendues
   # Votre jeu de données de départ n'est pas correct. Ce test échoue si vous
-  # n'avez pas bien rempli le code du chunk 'import'.
+  # avez modifié le code du chunk 'import' (il ne faut rien y changer).
 
   expect_true(is_identical_to_ref("import", "classes"))
   # La nature des variables (classe) dans le tableau `ckd` est incorrecte
@@ -114,34 +114,36 @@ test_that("Chunks 'bar2' & 'bar2comment' : graphique en barre des patients
 
     expect_true(is_identical_to_ref("bar2comment"))
     # L'interprétation du graphique en barres est (partiellement) fausse
-    # Vous devez cochez les phrases qui décrivent le graphique d'un 'x' entre les
-    # crochets [] -> [x]. Ensuite, vous devez recompiler la version HTML du
+    # Vous devez cochez les phrases qui décrivent le graphique d'un 'x' entre
+    # les crochets [] -> [x]. Ensuite, vous devez recompiler la version HTML du
     # bloc-notes (bouton 'Rendu') sans erreur pour réactualiser les résultats.
-    # Assurez-vous de bien comprendre ce qui est coché ou pas : vous n'aurez plus
-    # cette aide plus tard dans le travail de groupe ou les interrogations !
+    # Assurez-vous de bien comprendre ce qui est coché ou pas : vous n'aurez
+    # plus cette aide plus tard dans le travail de groupe ou les
+    # interrogations !
   })
 
 test_that("Chunks 'bar3a', 'bar3b' & 'bar3comment' : graphique en barre des
   patients touchés par une IRC et par le diabète", {
     expect_true(is_identical_to_ref("bar3a"))
     # Le graphique en barres produit par 'bar3a' n'est pas celui attendu
-    # Avez-vous bien employé modifié l'argument 'position =' ? Lisez bien
-    # la consigne et corrigez l'erreur, puis refaites un 'Rendu' du document
-    # avant de retester.
+    # Avez-vous bien employé modifié l'argument 'position =' ? Lisez bien la
+    # consigne et corrigez l'erreur, puis refaites un 'Rendu' du document avant
+    # de retester.
 
     expect_true(is_identical_to_ref("bar3b"))
     # Le graphique en barres produit par 'bar3a' n'est pas celui attendu
-    # Avez-vous bien employé modifié l'argument 'position =' ? Lisez bien
-    # la consigne et corrigez l'erreur, puis refaites un 'Rendu' du document
-    # avant de retester.
+    # Avez-vous bien employé modifié l'argument 'position =' ? Lisez bien la
+    # consigne et corrigez l'erreur, puis refaites un 'Rendu' du document avant
+    # de retester.
 
     expect_true(is_identical_to_ref("bar3comment"))
     # L'interprétation des deux graphiques en barres est (partiellement) fausse
-    # Vous devez cochez les phrases qui décrivent le graphique d'un 'x' entre les
-    # crochets [] -> [x]. Ensuite, vous devez recompiler la version HTML du
+    # Vous devez cochez les phrases qui décrivent le graphique d'un 'x' entre
+    # les crochets [] -> [x]. Ensuite, vous devez recompiler la version HTML du
     # bloc-notes (bouton 'Rendu') sans erreur pour réactualiser les résultats.
     # Assurez-vous de bien comprendre la différence entre les effectifs et les
-    # fractions sur l'axe Y, cela change grandement l'interprétation du graphique
+    # fractions sur l'axe Y, cela change grandement l'interprétation du
+    # graphique
     # Assurez-vous également de bien comprendre ce qui est coché ou pas :
     # vous n'aurez plus cette aide plus tard dans le travail de groupe ou les
     # interrogations !
@@ -152,15 +154,16 @@ test_that("Chunks 'bar4' & 'bar4comment' : graphique en barre de la moyenne de
     expect_true(is_identical_to_ref("bar4"))
     # Le graphique en barres produit par 'bar4' n'est pas celui attendu
     # Avez-vous bien calculé la moyenne par groupe ?  Lisez bien la consigne et
-    # corrigez l'erreur, puis refaites un 'Rendu' du document  avant de retester.
+    # corrigez l'erreur, puis refaites un 'Rendu' du document avant de retester.
 
     expect_true(is_identical_to_ref("bar4comment"))
     # L'interprétation du graphique en barres est (partiellement) fausse
-    # Vous devez cochez les phrases qui décrivent le graphique d'un 'x' entre les
-    # crochets [] -> [x]. Ensuite, vous devez recompiler la version HTML du
+    # Vous devez cochez les phrases qui décrivent le graphique d'un 'x' entre
+    # les crochets [] -> [x]. Ensuite, vous devez recompiler la version HTML du
     # bloc-notes (bouton 'Rendu') sans erreur pour réactualiser les résultats.
-    # Assurez-vous de bien comprendre ce qui est coché ou pas : vous n'aurez plus
-    # cette aide plus tard dans le travail de groupe ou les interrogations !
+    # Assurez-vous de bien comprendre ce qui est coché ou pas : vous n'aurez
+    # plus cette aide plus tard dans le travail de groupe ou les
+    # interrogations !
   })
 
 test_that("Chunks 'boxplot1' & 'boxplot1comment' : Boites de dispersion de
@@ -168,12 +171,12 @@ test_that("Chunks 'boxplot1' & 'boxplot1comment' : Boites de dispersion de
     expect_true(is_identical_to_ref("boxplot1"))
     # Les boites de dispersion produites par 'boxplot1' ne sont pas celles
     # attendues.  Lisez bien la consigne et corrigez l'erreur, puis refaites un
-    # 'Rendu' du document  avant de retester.
+    # 'Rendu' du document avant de retester.
 
     expect_true(is_identical_to_ref("boxplot1comment"))
     # L'interprétation des boites de dispersion sont (partiellement) fausses
-    # Vous devez cochez les phrases qui décrivent le graphique d'un 'x' entre les
-    # crochets [] -> [x]. Ensuite, vous devez recompiler la version HTML du
+    # Vous devez cochez les phrases qui décrivent le graphique d'un 'x' entre
+    # les crochets [] -> [x]. Ensuite, vous devez recompiler la version HTML du
     # bloc-notes (bouton 'Rendu') sans erreur pour réactualiser les résultats.
     # Assurez-vous de bien comprendre les cinq nombres qui sont à la base de ce
     # graphique. Assurez-vous également de bien comprendrece qui est coché
@@ -186,13 +189,13 @@ test_that("Chunks 'boxplot2' & 'boxplot2comment' : Boites de dispersion de
     expect_true(is_identical_to_ref("boxplot2"))
     # Les boites de dispersion produites par 'boxplot2' ne sont pas celles
     # attendues. Avez vous bien ajouté les nombres d'observations au dessus de
-    # chaque boite. Lisez bien la consigne et corrigez l'erreur, puis refaites un
-    # 'Rendu' du document  avant de retester.
+    # chaque boite. Lisez bien la consigne et corrigez l'erreur, puis refaites
+    # un 'Rendu' du document avant de retester.
 
     expect_true(is_identical_to_ref("boxplot2comment"))
     # L'interprétation des boites de dispersion sont (partiellement) fausses
-    # Vous devez cochez les phrases qui décrivent le graphique d'un 'x' entre les
-    # crochets [] -> [x]. Ensuite, vous devez recompiler la version HTML du
+    # Vous devez cochez les phrases qui décrivent le graphique d'un 'x' entre
+    # les crochets [] -> [x]. Ensuite, vous devez recompiler la version HTML du
     # bloc-notes (bouton 'Rendu') sans erreur pour réactualiser les résultats.
     # Assurez-vous également de bien comprendre ce qui est coché  ou pas : vous
     # n'aurez plus cette aide plus tard dans le travail de groupe ou les
@@ -202,13 +205,13 @@ test_that("Chunks 'boxplot2' & 'boxplot2comment' : Boites de dispersion de
 test_that("Chunks 'composite' & 'compositecomment' : Deux graphiques", {
     expect_true(is_identical_to_ref("composite"))
     # Le graphique composé de deux graphiques en boites de dispersion n'est pas
-    # celui attendue.  Lisez bien la consigne et corrigez l'erreur, puis refaites un
-    # 'Rendu' du document  avant de retester.
+    # celui attendue.  Lisez bien la consigne et corrigez l'erreur, puis
+    # refaites un 'Rendu' du document avant de retester.
 
     expect_true(is_identical_to_ref("compositecomment"))
     # L'interprétation des boites de dispersion sont (partiellement) fausses
-    # Vous devez cochez les phrases qui décrivent le graphique d'un 'x' entre les
-    # crochets [] -> [x]. Ensuite, vous devez recompiler la version HTML du
+    # Vous devez cochez les phrases qui décrivent le graphique d'un 'x' entre
+    # les crochets [] -> [x]. Ensuite, vous devez recompiler la version HTML du
     # bloc-notes (bouton 'Rendu') sans erreur pour réactualiser les résultats.
     # Avez vous tenu compte de la différence d'unité entre les deux graphiques.
     # Assurez-vous également de bien comprendre ce qui est coché  ou pas : vous

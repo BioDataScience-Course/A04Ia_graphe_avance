@@ -19,6 +19,7 @@ bibliography: "biblio/references.bib"
 <!--% Ajoutez votre nom dans l'entête YAML.-->
 
 ```{r setup}
+# Ceci est nécessaire pour les tests SDD, ne pas utiliser dans un "vrai" projet
 if (!"tools:tests" %in% search())
   source(here::here("tests/tools_tests.R"), attach(NULL, name = "tools:tests"))
 
@@ -30,7 +31,7 @@ SciViews::R(lang = "fr")
 
 L'insuffisance rénale chronique est un problème de santé préoccupant, touchant un grand nombre de personnes à l'échelle mondiale. Les conséquences de cette maladie incluent une accumulation de déchets et de toxines dans le corps, provoquant des symptômes tels que fatigue, nausées, vomissements, et perte d'appétit. Elle peut également entraîner des troubles métaboliques, une anémie, une augmentation de la pression artérielle, des déséquilibres électrolytiques, et une fragilité osseuse.
 
-La visualisation et la description de graphiques sont les premières étapes à réaliser dans le traitement et l'analyse des données afin de mettre en évidence des potentiels indicateurs pertinents pour diagnostiquer les patients malades
+La visualisation et la description de graphiques sont les premières étapes à réaliser dans le traitement et l'analyse des données afin de mettre en évidence des potentiels indicateurs pertinents pour diagnostiquer les patients malades. Notre but est donc de visualiser les données à l'aide de graphiques clairs et pertinents.
 
 # Matériel et méthodes
 
@@ -47,9 +48,9 @@ ckd <- read("data/ckd.rds")
 names(ckd)
 ```
 
-<!--# Vous pouvez retrouver la signification des variables et les unités via le lien suivant https://doi.org/10.24432/C5G020. Vous pouvez également retrouver ce lien dans les références de ce document et dans le README du projet. Le nom des variables est conservé, mais les niveaux, les labels et les unités sont francisés.-->
+<!--# Vous pouvez retrouver la signification des variables et les unités à partir du lien suivant https://doi.org/10.24432/C5G020. Vous pouvez également retrouver ce lien dans les références de ce document et dans le README du projet. Le nom des variables est conservé, mais les niveaux, les labels et les unités sont francisés. -->
 
-<!--% Réalisez un dénombrement par classe (`class`) des patients  atteints d'irc, présentant ou non une coronaropathie (`cad`) en utilisant des aplats (surfaces) colorés.-->
+<!--% Réalisez un dénombrement par classe (`class`) des patients atteints d'irc, présentant ou non une coronaropathie (`cad`) en utilisant des aplats (surfaces) colorés. -->
 
 ```{r bar1, record='RNSTR', arg='labels,layers'}
 ___ +
@@ -71,7 +72,7 @@ select_answer(r"-{
 [] -  293 patients souffrent d’une altération du flux sanguin dans les artères coronaires.}-")
 ```
 
-<!--% Réalisez un dénombrement par classe (`class`) des patients présentant ou non des amas de pyocytes (`pcc`) en utilisant des aplats de couleurs de type 'viridis'. Utilisez l'argument `position = "dodge"`.-->
+<!--% Réalisez un dénombrement par classe (`class`) des patients présentant ou non des amas de pyocytes (`pcc`) en utilisant des aplats de couleurs de type 'viridis'. Utilisez l'argument `position = "dodge"`. -->
 
 ```{r bar2, record='RNSTR', arg='labels,layers'}
 ___ +
@@ -92,7 +93,7 @@ select_answer(r"-{
 [] -   Des groupements de leucocytes en voie de dégénérescence sont repartis de manière presque équitable chez les patients atteints ou non par de l’insuffisance rénale chronique.}-")
 ```
 
-<!--% Réalisez le dénombrement de l'hypertension (`htn`) en distinguant par la couleur les patients présentant un diabète sucré (`dm`). Utilisez un graphique en facettes pour la classe de patients (`class`). Employez l'argument `position = "stack"` (option par défaut) pour ce graphique.-->
+<!--% Réalisez le dénombrement de l'hypertension (`htn`) en distinguant par la couleur les patients présentant un diabète sucré (`dm`). Utilisez un graphique en facettes pour la classe de patients (`class`). Employez l'argument `position = "stack"` (option par défaut) pour ce graphique. -->
 
 ```{r bar3a, record='RNSTR', arg='labels,layers'}
 ___ +
@@ -101,7 +102,7 @@ ___ +
   scale_fill_viridis_d()
 ```
 
-<!--% Réalisez le même gaphique que pour le chunk `bar3a`. Employez cependant l'argument `position = "fill"` pour ce graphique. Remplacer le labels `Effectifs` par `Fractions`.-->
+<!--% Réalisez le même gaphique que pour le chunk `bar3a`. Employez cependant l'argument `position = "fill"` pour ce graphique. Remplacer le labels `Effectifs` par `Fractions`. -->
 
 ```{r bar3b, record='RNSTR', arg='labels,layers'}
 ___ +
@@ -125,7 +126,7 @@ select_answer(r"-{
 [] -   Chaque graphique permet de mettre en avant une vue pertinente des données. Il faut cependant bien préciser le graphique réalisé.}-")
 ```
 
-<!--% Réalisez un graphique en barres de la moyenne de la concentration en urée sanguine (`bu`) en fonction de la classe (`class`).-->
+<!--% Réalisez un graphique en barres de la moyenne de la concentration en urée sanguine (`bu`) en fonction de la classe (`class`). -->
 
 ```{r bar4, record='RNSTR', arg='labels,layers'}
 ___ +
@@ -137,11 +138,10 @@ ___ +
 ```{r bar4comment, output='asis'}
 select_answer(r"-{
 [] -   71 personnes sont atteintes d’IRC et 32 sont sains.
-[] -   La moyenne d’urée sanguine est 71 mg/dL pour personnes  atteintes d’IRC et 32 mg/dL pour les personnes saines.
-  }-")
+[] -   La moyenne d’urée sanguine est 71 mg/dL pour personnes atteintes d’IRC et 32 mg/dL pour les personnes saines.}-")
 ```
 
-<!--% Réalisez des boites de dispersions avec les mêmes données que pour le graphique précédent. Proposez la concentration en urée sanguine (`bu`) en fonction de la classe (`class`). -->
+<!--% Réalisez des boites de dispersions avec les mêmes données que pour le graphique précédent. Représentez la concentration en urée sanguine (`bu`) en fonction de la classe (`class`). -->
 
 ```{r boxplot1, record='RNSTR', arg='labels,layers'}
 ___ +
@@ -166,7 +166,7 @@ select_answer(r"-{
   }-")
 ```
 
-<!--% Réalisez des boites de dispersion de la concentration en sodium (`sod`) en fonction de la classe (`class`) et de l'hypertension (`htn`) sous forme d'aplats de couleurs 'viridis'. Indiquez le nombre d'observations sur votre graphique au-dessus des boites de dispersion.-->
+<!--% Réalisez des boites de dispersion de la concentration en sodium (`sod`) en fonction de la classe (`class`) et de l'hypertension (`htn`) sous forme d'aplats de couleurs 'viridis'. Indiquez le nombre d'observations sur votre graphique au-dessus des boites de dispersion. -->
 
 ```{r boxplot2, record='RNSTR', arg='labels,layers'}
 give_n <- function(x)
@@ -197,7 +197,7 @@ select_answer(r"-{
   }-")
 ```
 
-<!--% Réalisez deux graphiques en boites de dispersion parallèles, l'un représentant le nombre de globules blancs (`wc`) et l'autre le nombre de globules rouges (`rc`) en fonction de la classe (`class`) et de la présence ou non de coronaropathie (`cad`) sous la forme d'aplats de couleurs. Assemblez ces deux graphiques sur une seule figure avec légende commune pour les deux. -->
+<!--% Réalisez deux graphiques en boites de dispersion parallèles, l'un représentant le nombre de globules blancs (`wc`) et l'autre le nombre de globules rouges (`rc`) en fonction de la classe (`class`) et de la présence ou non de coronaropathie (`cad`) sous la forme d'aplats de couleurs. Assemblez ces deux graphiques dans une seule figure avec légende commune pour les deux. -->
 
 ```{r composite, record='RNSTR', arg='labels,layers'}
 # Nombre de globules blancs
@@ -222,8 +222,7 @@ select_answer(r"-{
 []  - La quantité de globules rouges est relativement similaire entre les trois groupes étudiés alors que les globules blancs sont nettement plus élevés chez les patients sains que pour les 2 autres groupes.
 [] -   On retrouve autant de globules rouges que de globules blancs chez la patiente touchée par une IRC et par la coronaropathie.
 [] -   On retrouve de deux fois moins de globules rouges que de globules blancs chez les patients touchés par une IRC et par la coronaropathie.
-[] -   On retrouve plus de 400 fois plus de globules rouges que de globules blancs chez les patients touchés par une IRC et par la coronaropathie.
-  }-")
+[] -   On retrouve plus de 400 fois plus de globules rouges que de globules blancs chez les patients touchés par une IRC et par la coronaropathie.}-")
 ```
 
 # Discussion et conclusion
